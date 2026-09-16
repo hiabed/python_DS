@@ -1,4 +1,5 @@
 def NULL_not_found(object: any) -> int:
+
     if object is None: # means null in other languages.
         # We use 'is' because None is a singleton and is used memory identity comparison.
         # (only one instance exists in memory),
@@ -12,6 +13,8 @@ def NULL_not_found(object: any) -> int:
         return 0
     elif type(object) is int and object == 0:
         print (f"Zero: {object} {type(object)}")
+        # print(f"id of int is {id(int)}")
+        # print(f"id of object is {id(type(object))}")
         return 0
     elif object is False: # we use 'is' because 0 means false using '=='
         print (f"Fake: {object} {type(object)}")
