@@ -24,4 +24,6 @@ if len(sys.argv) < 2:
     print("0 digits")
 
 else:
-    print("correct number of arguments.")
+    string = sys.argv[1]
+    
+    print(f"correct number of arguments. {sys.argv[1]}")
