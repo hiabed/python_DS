@@ -3,6 +3,7 @@ import string
 
 
 def main():
+    """Count and display character categories from one command-line string."""
     if len(sys.argv) < 2:
         print("What is the text to count?")
         print("Hello World!")
@@ -14,7 +15,10 @@ def main():
         print("0 digits")
 
     elif len(sys.argv) > 2:
-        print("AssertionError: Too many arguments provided. Please provide only one text string to analyze.")
+        print(
+            "AssertionError: Too many arguments provided. "
+            "Please provide only one text string to analyze."
+        )
 
     else:
         text = sys.argv[1]
