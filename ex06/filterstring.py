@@ -1,8 +1,6 @@
 import sys
 from ft_filter import ft_filter
 
-# filterstring = lambda S, N: [word for word in S.split() if len(word) > N]
-
 
 def main():
     """Filter and display words from a command-line string based on length."""
