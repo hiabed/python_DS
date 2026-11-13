@@ -13,4 +13,3 @@ try:
         print("I'm Odd.")
 except ValueError:
     sys.exit("AssertionError: argument is not an integer")
-
