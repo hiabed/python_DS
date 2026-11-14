@@ -1,9 +1,10 @@
 import sys
 
-if (len(sys.argv) == 1):
-    sys.exit()
-elif (len(sys.argv) > 2):
-    sys.exit("AssertionError: more than one argument is provided")
+if len(sys.argv) == 1:
+    sys.exit(0)
+elif len(sys.argv) > 2:
+    print("AssertionError: more than one argument is provided")
+    sys.exit(1)
 
 try:
     number = int(sys.argv[1])
@@ -12,4 +13,5 @@ try:
     else:
         print("I'm Odd.")
 except ValueError:
-    sys.exit("AssertionError: argument is not an integer")
+    print("AssertionError: argument is not an integer")
+    sys.exit(1)
