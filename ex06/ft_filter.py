@@ -6,4 +6,4 @@ is true. If function is None, return the items that are true."""
 
     if function_to_apply is None:
         return [item for item in iterable if item]
-    return [item for item in iterable if (function_to_apply(item))]
+    return [item for item in iterable if function_to_apply(item)]
