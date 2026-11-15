@@ -1,9 +1,8 @@
 import sys
-import string
 
 
 def main():
-    """Count and display character categories from one command-line string."""
+    """Count and display the character categories of a given string."""
     if len(sys.argv) > 2:
         print("AssertionError: Too many arguments provided.")
         sys.exit(1)
@@ -22,12 +21,13 @@ def main():
     punctuation_count = 0
     space_count = 0
     digit_count = 0
+    punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
     for c in text:
         if c.isupper():
             upper_count += 1
         elif c.islower():
             lower_count += 1
-        elif c in string.punctuation:
+        elif c in punctuation:
             punctuation_count += 1
         elif c.isspace():
             space_count += 1
